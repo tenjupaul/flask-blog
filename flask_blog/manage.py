@@ -20,4 +20,3 @@ manager.add_command("runserver", Server(
 if __name__ == "__main__":
    # print(sys.path)
     manager.run()
-    
