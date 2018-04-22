@@ -8,12 +8,12 @@ class Author(db.Model):
     password = db.Column(db.String(80))
     is_author = db.Column(db.Boolean)
 
-def __init__(self, fullname, username, email, password, is_author=False):
-    self.fullname = fullname
-    self.username = username
-    self.email = email
-    self.password= password
-    self.is_author = is_author
+    def __init__(self, fullname, username, email, password, is_author=False):
+        self.fullname = fullname
+        self.username = username
+        self.email = email
+        self.password= password
+        self.is_author = is_author
 
-def __repr__(self):
-    return '<Author %r>' % self.username
+    def __repr__(self):
+        return '<Author %r>' % self.username
